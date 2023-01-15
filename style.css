@@ -1,0 +1,93 @@
+/*  Date:15/01/2023
+    author: dulal AJ 
+    developer: dulal AJ 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*  common varaibels */
+:root{
+--josefin: 'Josefin Sans', sans-serif;
+--monters: 'Montserrat', sans-serif;
+--popin: 'Poppins', sans-serif;
+--purple-light: #806BFF;
+--purple-deep:#1A1036;
+}
+body{
+    font-family: var(--monters);
+    max-width: 1440px;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+/*  header Design */
+header{ 
+    display: flex;
+  
+}
+.purple-light{
+    color: var(--purple-light) ;
+}
+.header-text{
+    flex: 50%;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+.header-text h2{
+    font-family: var(--josefin);
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.header-text h3{
+    font-family: var(--popin);
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.header-text h1{
+    font-family: var(--popin);
+    font-size: 103px;
+    font-weight: 700;
+    line-height: 96px;
+    text-transform: uppercase;
+}
+.header-text p{
+    font-family: var(--popin);
+    font-size: 20px;
+    font-weight: 400;
+}
+.header-image{
+    flex: 50%;
+}
+.header-image svg{
+    width: 100%;
+}
+
+/*   Ability Section style */
+section{
+  display: flex;
+  flex-direction: column;  
+}
+section aside{
+   display:  flex;
+}
+section aside .ability-images{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column div{}
+section aside .ability-text{}
+
+section aside:nth-child(2){
+    flex-direction: row-reverse;
+}
