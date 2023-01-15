@@ -74,20 +74,52 @@ header{
 section{
   display: flex;
   flex-direction: column;  
+  margin-top: 100px;
+  gap: 100px;
 }
 section aside{
    display:  flex;
 }
 section aside .ability-images{
     display: flex;
+    gap: 10px;
 }
 .column{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .column div{}
-section aside .ability-text{}
+section aside .ability-text{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
 
+}
+section aside .ability-text h2{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+section aside .ability-text p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+   
+section aside:nth-child(2) .ability-text{
+    padding: 0;
+}
+section aside:nth-child(2) div{
+    display: flex;
+    justify-content: flex-end;
+}
 section aside:nth-child(2){
     flex-direction: row-reverse;
+    
+}
+aside > div{
+    flex: 50%;
 }
