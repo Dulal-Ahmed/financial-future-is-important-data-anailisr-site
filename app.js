@@ -70,19 +70,26 @@ let calculateforcast = ()=>{
                             </div>`;
         
              if(i == nTime){
-          const compoundClasses=  document.querySelectorAll('.compound');
+       
+    
+         const vrtk=  document.querySelectorAll('.vrtk');
+         const compoundClasses=  document.querySelectorAll('.compound');
           const convensiveClasses=  document.querySelectorAll('.convensive');
           const investClasses=  document.querySelectorAll('.invest');
           console.log(investHight1[nTime], convensiveVerHeight1[nTime], compoundsVerHeight1[nTime]  )
           let Onethirdratio =Math.round( (investHight1[nTime] *1 + convensiveVerHeight1[nTime] * 1 + compoundsVerHeight1[nTime] *1 ));
- 
+       
         for(let j=0; j<=nTime; j++){
 
           investClasses[j].style.height = `${investHight1[j] * ( 260 / Onethirdratio)}px`;
           convensiveClasses[j].style.height = `${convensiveVerHeight1[j] * ( 260 / Onethirdratio)}px`;
           compoundClasses[j].style.height = `${compoundsVerHeight1[j] * ( 260 / Onethirdratio)}px`;
-
              }
+            vrtk[0].innerHTML =  Onethirdratio;
+            vrtk[3].innerHTML = Math.round( Onethirdratio  / 4);
+            vrtk[2].innerHTML = Math.round( (Onethirdratio  / 4) * 2);
+            vrtk[1].innerHTML = Math.round( (Onethirdratio  / 4) * 3);
+//  end if condition s
             }
               }
   
