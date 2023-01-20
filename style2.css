@@ -8,8 +8,17 @@
     box-sizing: border-box;
     
 }
+th{
+    padding: 10px;
+}
 a{
     text-decoration: none;
+}
+#dateinput{
+    padding: 5px;
+    color: var(--purple-light);
+    outline: none;
+    border: none;
 }
 /*  common varaibels */
 :root{
@@ -444,6 +453,7 @@ input[type="range"] {
     line-height: 27px;
     border-radius: 40px;
     color: white;
+    cursor: pointer;
  }
 
  .num{
@@ -989,6 +999,4 @@ input[type="range"] {
    font-size: 12px;
    font-weight: bold;
  }
-
-
 }
